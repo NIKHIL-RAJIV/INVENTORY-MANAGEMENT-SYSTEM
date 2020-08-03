@@ -3,13 +3,11 @@ from datetime import datetime
 
 
 user = "root"
-password = "chalakudy"
 database = "tablemaker"
 
 db = con = mysql.connector.connect(
     user = user,
     host = 'localhost',
-    passwd = password,
     database = database
     )
 
