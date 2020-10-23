@@ -2,11 +2,11 @@ from tkinter import *
 from tkinter import messagebox
 import mysql.connector
 
-
+password='12345'
 database = "tablemaker"
 censored_pd = password[:2] + "*"*len(password[2:])
 
-con = mysql.connector.connect(user="root",host="localhost",database=database)
+con = mysql.connector.connect(user="root",host="localhost",database=database,password=password)
 cur = con.cursor()
 
 bgc = "#304050"
